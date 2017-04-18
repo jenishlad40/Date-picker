@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fj4-36-NYd">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="IQL-js-f3d"/>
+                                    <constraint firstAttribute="width" constant="375" id="hKD-xo-ZXA"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="512365294.51123899">
+                                    <!--2017-03-28 03:41:34 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NE-Vr-Tat">
+                                <rect key="frame" x="126" y="304" width="123" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="RFu-rl-XHU"/>
+                                    <constraint firstAttribute="width" constant="123" id="UAp-kJ-Hsk"/>
+                                </constraints>
+                                <state key="normal" title="Get Date"/>
+                                <connections>
+                                    <action selector="getdate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Im-NB-qe3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fj4-36-NYd" secondAttribute="trailing" id="6Yk-WX-70m"/>
+                            <constraint firstItem="9NE-Vr-Tat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JdT-J5-WDg"/>
+                            <constraint firstItem="9NE-Vr-Tat" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MMh-e5-ayJ"/>
+                            <constraint firstItem="Fj4-36-NYd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QlH-4q-HPZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fj4-36-NYd" secondAttribute="bottom" id="gF1-HU-CZo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myDatePicket" destination="Fj4-36-NYd" id="k32-8W-r18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
